@@ -8,21 +8,24 @@
             var robotArm = new RobotArm(canvas);
             
             // Het level inladen
-            robotArm.loadLevel("exercise 7");
+            robotArm.loadLevel("exercise 8");
             robotArm.speed=1500
             
             // Jou instructies volgen hier
-            for(q = 1; q <=5; q++){
-            for(i = 1; i <=6; i++){    
+            robotArm.moveRight();
+            for(i = 1; i <=7; i++){
+            robotArm.grab();  
+            for(q = 1; q <=8; q++){  
                 robotArm.moveRight();
-                robotArm.grab();   
+            }
+            robotArm.drop();
+            for (var z = 1; z <= 8; z++){
                 robotArm.moveLeft();
-                robotArm.drop();
-            }
-                robotArm.moveRight();
-                robotArm.moveRight();
-
-            }
+            } 
+            }  
+               
+            
+            
                 
 
             // De door jou opgegeven instructies uitvoeren
