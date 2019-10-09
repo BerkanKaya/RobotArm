@@ -9,57 +9,29 @@
             
             // Het level inladen
             robotArm.loadLevel("exercise 9");
-            robotArm.speed=20000
+            robotArm.speed=2000
             
             // Jou instructies volgen hier
-                robotArm.moveRight();
-            for(i = 1; i <=2; i++){
-                robotArm.grab();  
-            for(q = 1; q <=5; q++){  
-                robotArm.moveRight();
-            }
-                robotArm.drop();
-            for (var z = 1; z <= 5; z++){
-                robotArm.moveLeft();
-            } 
-            }  
-            robotArm.moveLeft();
-            for(a = 1; a <=1; a++){
+         
+
+
+            for(z = 1; z <=4; z++){   
+            for(m = 0; m <z; m++){   
                 robotArm.grab();  
             for(d = 1; d <=5; d++){  
                 robotArm.moveRight();
             }
-            robotArm.drop();
-            for (b = 1; b <= 5; b++){
-                robotArm.moveLeft();
-            } 
-            } 
-
-            for(l = 1; l <=2; l++)
-                robotArm.moveRight();
-            for(k = 1; k <=3; k++){
-                robotArm.grab();  
-            for(j = 1; j <=5; j++){  
-                robotArm.moveRight();
-            }
-            robotArm.drop();
-            for (h = 1; h <= 5; h++){
-                robotArm.moveLeft();
-            } 
-            }  
-
-            for(l = 1; l <=1; l++)
-                robotArm.moveRight();
-            for(k = 1; k <=4; k++){
-                robotArm.grab();  
-            for(j = 1; j <=5; j++){  
-                robotArm.moveRight();
-            }
                 robotArm.drop();
-            for (h = 1; h <= 5; h++){
-                robotArm.moveLeft();
-            } 
-            } 
+
+                for(x = 1; x <=5; x++){
+                    robotArm.moveLeft();
+                }
+            
+            }
+            robotArm.moveRight();
+        }
+
+
             // De door jou opgegeven instructies uitvoeren
             robotArm.run();
         </script>
