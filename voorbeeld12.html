@@ -13,11 +13,29 @@
             
             // Jou instructies volgen hier
         var color;
-        var right= 8;
+        var right= 9;
         var left= 5;
-        for (i=5; i<9; i++){
-            
-        }
+
+            for (i=0; i<9; i++){
+                robotArm.grab();
+                color=robotArm.scan();
+            if (color == "red"){
+            for(d=0; d<right; d++){
+                robotArm.moveRight();
+                }    
+                robotArm.drop();
+                right = right -1;
+            for(n=0; n<right; n++){
+                robotArm.moveLeft();
+                }
+                }
+            else{
+                robotArm.drop();
+                robotArm.moveRight();
+                right = right -1;
+                left = left -1;
+                }
+                }
 
            
             
