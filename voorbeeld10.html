@@ -13,22 +13,22 @@
             
             // Jou instructies volgen hier
   
-           for(i = 1; i <=4; i++){ 
-                robotArm.moveRight(); 
-                } 
-            for(i = 1; i <=9; i++){   
-                robotArm.grab(); 
+for(i = 1; i <=4; i++){ 
+    robotArm.moveRight(); 
+} 
+for(i = 1; i <=9; i++){   
+    robotArm.grab(); 
 
-            for(d = 1; d <=i; d++){  
-                robotArm.moveRight();
-            }
-            i++
-                robotArm.drop();
+    for(d = 1; d <=i; d++){  
+        robotArm.moveRight();
+    }
+    i++
+    robotArm.drop();
 
-                for(x = 1; x <=i; x++){
-                    robotArm.moveLeft();
-                }
-            }
+    for(x = 1; x <=i; x++){
+        robotArm.moveLeft();
+    }
+}
         
 
         
